@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. Arthmetic Operators - + , - , / , * , %-Remainder
+
+        var x = 10
+        var y = 5
+
+        console.log(x+y)
+        console.log(x-y)
+        console.log(x/y)
+        console.log(x*y)
+        console.log(x%y)
+
+        console.log(11%2)
+
+
+        //Left Number < Right Number = Left Number
+        console.log(2%11)
+        console.log(1%9)
+
+        //2. Assignment - =
+        var a = 10
+        console.log(a+=5) //15
+
+        //3.Comaprieson -
+
+        var p = 20
+        var q = 15
+
+        console.log(p<q)  //False
+        console.log(p>q)  //True
+
+        console.log(p<=q)
+
+        var height1 = 170
+        var height2 = "170"
+
+        //  == Checks The Value
+        console.log(height1 == height2)  //True
+
+        // ===Check sthe Value and Data Type aslo
+        console.log(height1 === height2)  //False
+
+
+        //4 Logical Operators 
+        //1. AND && : Both Condition is TRUE THEN OUTPUT IS TRUE
+        var isLogin = true
+        var NetflixSubscription = false
+
+        console.log("Watch Video "  , isLogin && NetflixSubscription) //False
+
+        var isMember = true
+        var TotalBill = 500
+
+        console.log("Discount " , isMember && TotalBill >=500)  // True
+
+        //2.OR || : Only if One Condition is True Then Output is True
+
+         console.log("Discount " , isMember || TotalBill >=1000)  //True
+         
+         //3. Negation ! - oppsite Value
+
+         var SubscritionPaid = false
+
+         console.log("Satus" , !SubscritionPaid)
+
+
+
+
+            
+
+
+    </script>
+</body>
+</html>
