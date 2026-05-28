@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    Example 1
+    <p id="text">Hello Good Eveing</p>
+
+    <button id="btn">Login/Follow</button>
+
+    <script>
+          
+    const ele =   document.getElementById("text")
+
+    ele.textContent = "Welcome To DOM Magic"
+
+    const ele1 = document.getElementById("btn")
+
+    ele1.textContent = "Logout/Following"
+
+    </script> -->
+
+
+
+    <!--
+    Example 2
+    <div id="xyz"> Hello This is Div Container </div>
+
+    <script>
+    const ele2 =  document.getElementById("xyz")
+
+    //Change or Update The Tag use innerHTML 
+    //One Tag 
+
+    // ele2.innerHTML = "<h1>This is HEading Tag Now</h1>"
+
+
+    //Multiple Tag
+    // Belwo Esc Key You will find back tick `
+    ele2.innerHTML = `
+        <h2>Iphone</h2>
+        <img src="data:image/jpeg;base64,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"  height="120" width="150">
+        <p>Rs 9999</p>
+        <button>Buy Now</button>
+    `
+    </script> -->
+
+
+
+  <!-- <p id="myp">This is Old Dull Text</p>
+
+  <script>
+    const ele3 = document.getElementById("myp")
+    //.style.propertyName it updates css prop
+
+    ele3.style.color = "red"
+    ele3.style.backgroundColor="black"
+    ele3.style.fontSize = "50px"
+  </script> -->
+
+
+
+
+  <ul id="abc">
+   <li>Water</li>
+  
+  </ul>
+
+  <script>
+        const ul = document.getElementById("abc")
+
+
+      const list =  document.createElement("li")
+      list.textContent = "Gym"
+
+      ul.appendChild(list)
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myP">Hello Guys , Good Eveing</p>
+
+
+     <div class="xyz">Web Development</div>
+     <div class="xyz">App Development</div>
+
+     <p>Welcome To Javascript</p>
+
+    <script>
+         //Selecting Method through
+         //document - webpage
+          //Element - Tag
+         var abc   =  document.getElementById("myP")
+         console.log(abc)
+        //  textContent - It Shows The Content of Tag
+         console.log(abc.textContent)
+
+       //className
+       const ele =  document.getElementsByClassName("xyz")
+       console.log(ele)
+       console.log(ele[1])
+       console.log(ele[1].textContent)
+
+     //TagName
+       const pqr =   document.getElementsByTagName("p")
+       console.log(pqr)
+       console.log(pqr[0])
+       console.log(pqr[0].textContent)
+    
+    </script>
+</body>
+</html>
