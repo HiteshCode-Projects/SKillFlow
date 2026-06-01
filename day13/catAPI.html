@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .container{
+            margin-top: 50px;
+        }
+
+        img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button{
+            padding: 10px 20px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+          <h1>Random Cat Generator</h1>
+           
+          <img id="catImage" src="" >
+
+          <button id="btn">Get Cat</button>
+    </div>
+
+    <script>
+        const btn = document.getElementById("btn")
+
+        const catImage = document.getElementById("catImage")
+
+        //CApture The user - addEventListner
+
+        btn.addEventListener("click" , function(){
+            
+            fetch("https://api.thecatapi.com/v1/images/search")
+
+            .then((response)=>{
+                return response.json()
+            })
+
+            .then((data)=>{
+                console.log(data)
+                catImage.src = data[0].url
+            })
+
+
+
+            .catch((error)=>{
+                console.log("Error :" , error)
+                
+                alert("Failed To Load cat Image")
+
+            });
+
+
+        });
+
+    </script>
+</body>
+</html>
