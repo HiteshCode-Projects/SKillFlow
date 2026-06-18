@@ -10,7 +10,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-// Connect to MongoDB Db . 1 LocalDb - 27017
+// Connect to MongoDB Db . 1 LocalDb - 27017 or cloud Address
 mongoose.connect('mongodb://localhost:27017/SkillFlowUserAuth')
 
 .then(()=>{
